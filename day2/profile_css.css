@@ -1,0 +1,36 @@
+*{
+    text-align: center;
+}
+
+html{
+    background-color: #bbc0f4;
+    font-size: 16px;
+}
+
+body{
+    width: 640px;
+    margin: auto;   /* 너비에서 남는 여백을 동일하게 분배 */
+    padding: 100px;
+}
+
+h1{
+    font-size: 48px;
+}
+
+img{
+    margin-top: 48px;
+    width: 240px;
+    height: 320px;
+    border:double 20px #7078d0;
+    border-radius: 40px 40px 0px 0px;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+#tour{
+    background-color: rgb(90, 170, 179);
+    color:white;
+    font-family: serif;
+}
