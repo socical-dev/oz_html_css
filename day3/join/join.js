@@ -27,5 +27,9 @@ form.addEventListener("submit", function(e){
   }
 
   document.body.innerHTML = ""
-  document.write(`<p>${userId}님 환영합니다</p>`)
+  document.write(`<p>${userId}님 환영합니다\n회원 가입 시 입력하신 내역은 다음과 같습니다.</p>`)
+  document.write(`<p>아이디 : ${userId}</p>`)
+  document.write(`<p>이름 : ${userName}</p>`)
+  document.write(`<p>전화번호 : ${userPhone}</p>`)
+  document.write(`<p>원하는 직무 : ${userPosition}</p>`)
 })
