@@ -1,5 +1,5 @@
 import unittest
-from app.repositories.user_repository import UserRepository
+from repositories.user_repository import UserRepository
 
 class TestUserRepository(unittest.TestCase):
     def test_create_user(self):

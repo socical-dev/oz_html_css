@@ -1,4 +1,4 @@
-from app.models.user import User
+from user.models.user import User
 from connectDB import get_connection
 
 class UserRepository:

@@ -1,4 +1,3 @@
-import pymysql
 from connectDB import get_connection
 
 # 테이블 생성 함수

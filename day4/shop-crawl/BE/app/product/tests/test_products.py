@@ -1,5 +1,5 @@
 import unittest
-from app.repositories.product_repository import ProductRepository
+from repositories.product_repository import ProductRepository
 
 class TestProductRepository(unittest.TestCase):
     def test_create_product(self):

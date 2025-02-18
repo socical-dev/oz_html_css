@@ -1,8 +1,8 @@
 from flask import Flask
 from flask_cors import CORS
-from app.routes.user_routes import user_routes
-from app.routes.product_routes import product_routes
-from app.routes.crawler_routes import crawler_routes
+from user.routes.user_routes import user_routes
+from product.routes.product_routes import product_routes
+from crawler.routes.crawler_routes import crawler_routes
 
 app = Flask(__name__)
 

@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from flask_cors import CORS
-from app.services.product_service import ProductService
+from product.services.product_service import ProductService
 
 product_routes = Blueprint("product_routes", __name__)
 CORS(product_routes)  # ✅ Blueprint에도 CORS 적용 (OPTIONS 필요 없음)

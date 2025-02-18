@@ -11,12 +11,12 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
-from app.services.product_service import ProductService
+from product.services.product_service import ProductService
 
 def scrape_product():
     """KREAM 웹사이트에서 상품 데이터를 크롤링하여 DB에 저장하는 함수."""
     options = webdriver.ChromeOptions()
-    
+
     # User-Agent 변경 (Chrome 브라우저처럼 위장)
     user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
     options.add_argument(f"user-agent={user_agent}")

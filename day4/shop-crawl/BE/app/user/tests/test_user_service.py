@@ -1,5 +1,5 @@
 import unittest
-from app.services.user_service import UserService
+from services.user_service import UserService
 
 class TestUserService(unittest.TestCase):
     def test_register_user(self):

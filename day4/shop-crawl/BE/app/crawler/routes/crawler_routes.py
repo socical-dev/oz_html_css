@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify
-from app.crawler.crawler import scrape_product
+from crawler.services.crawler import scrape_product
 
 crawler_routes = Blueprint("crawler_routes", __name__)
 
