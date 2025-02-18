@@ -14,6 +14,44 @@ KREAM 사이트에서 최신 상품 데이터를 크롤링하여 MySQL 데이터
 
 ---
 
+현재 프로젝트는 전통적인 MVC 패턴과는 조금 다르며,비즈니스 로직과 데이터 접근을 분리한 클린 아키텍처 스타일을 따릅니다.
+
+📌 폴더별 역할 정리
+
+✅ 모델 (Model) → models/
+
+app/product/models/product.py
+
+app/user/models/user.py
+
+=> DB 스키마를 정의
+
+✅ 서비스 (Service) → services/
+
+app/product/services/product_service.py
+
+app/user/services/user_service.py
+
+=> 비즈니스 로직을 담당
+
+✅ 라우트 (Routes) → routes/
+
+app/product/routes/product_routes.py
+
+app/user/routes/user_routes.py
+
+=> HTTP 요청을 처리하는 부분으로, Flask에서 Controller 역할
+
+✅ 데이터 접근 계층 (Repository) → repositories/
+
+app/product/repositories/product_repository.py
+
+app/user/repositories/user_repository.py
+
+=> DB 접근을 캡슐화한 계층
+
+---
+
 ## 📌 프로젝트 구조
 <div class="tree">
             <ul>
